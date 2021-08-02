@@ -49,7 +49,7 @@ module DefaultSubscribe = {
   let useSubscribe = (~model, ~props, ~dispatch) => ()
 }
 
-module ModelViewPropsEffect = (Component: mvps) => {
+module ModelViewPropsSubscribe = (Component: mvps) => {
   let useMake = (props: Component.props) => {
     let (model, dispatch) = React.useReducer(Component.update, Component.initialModel)
     Component.useSubscribe(~model, ~dispatch, ~props)
@@ -71,6 +71,16 @@ module type mvpst = {
   let useSubscribe: (~model: model, ~props: props, ~dispatch: dispatch) => unit
 
   let successView: (~model: success, ~props: props, ~dispatch: dispatch) => React.element
-  let loadingView: (~model: success, ~props: props, ~dispatch: dispatch) => React.element
-  let errorView: (~model: success, ~props: props, ~dispatch: dispatch) => React.element
+  let loadingView: (~model: loading, ~props: props, ~dispatch: dispatch) => React.element
+  let errorView: (~model: error, ~props: props, ~dispatch: dispatch) => React.element
+  let view: (~model: model, ~props: props, ~dispatch: dispatch) => React.element
+}
+
+module ModelViewPropsSubscribeTrine = (Component: mvpst) => {
+  let useMake = (props: Component.props) => {
+    let (model, dispatch) = React.useReducer(Component.update, Component.initialModel)
+    Component.useSubscribe(~model, ~dispatch, ~props)
+    Component.view(~model, ~props, ~dispatch)
+  }
+  let make = useMake
 }

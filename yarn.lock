@@ -1231,6 +1231,11 @@
     "minimatch" "^3.0.4"
     "strip-json-comments" "^3.1.1"
 
+"@glennsl/bs-json@^5.0.4":
+  "integrity" "sha512-Th9DetZjRlMZrb74kgGJ44oWcoFyOTE884WlSuXft0Cd+J09vHRxiB7eVyK7Gthb4cSevsBBJDHYAbGGL25wPw=="
+  "resolved" "https://registry.npmjs.org/@glennsl/bs-json/-/bs-json-5.0.4.tgz"
+  "version" "5.0.4"
+
 "@hapi/address@2.x.x":
   "integrity" "sha512-QD1PhQk+s31P1ixsX0H0Suoupp3VMXzIVMSwobR3F3MSUO2YCV0B7xqLcUw/Bh8yuvd3LhpyqLQWTNcRmp6IdQ=="
   "resolved" "https://registry.npmjs.org/@hapi/address/-/address-2.1.4.tgz"
@@ -2993,6 +2998,16 @@
     "electron-to-chromium" "^1.3.564"
     "escalade" "^3.0.2"
     "node-releases" "^1.1.61"
+
+"bs-fetch@^0.6.2":
+  "integrity" "sha512-VXEjp8kY3vHPckaoy3d96Bx0KYjJAPLNISBwfpwMN26K6DtuZYwI2HKhx7zeHBajz1bRArfx7O8OOLcdtujMvg=="
+  "resolved" "https://registry.npmjs.org/bs-fetch/-/bs-fetch-0.6.2.tgz"
+  "version" "0.6.2"
+
+"bs-platform@>= 3.1.0":
+  "integrity" "sha512-Ye9JqJ4Oa7mcjjoOVRYI8Uc2Cf8N7jQLWDcdUplY7996d/YErSR7WitmV7XnSwr4EvdrbwjEsg1NxNjUQv3ChA=="
+  "resolved" "https://registry.npmjs.org/bs-platform/-/bs-platform-9.0.2.tgz"
+  "version" "9.0.2"
 
 "bser@2.1.1":
   "integrity" "sha512-gQxTNE/GAfIIrmHLUE3oJyp5FO6HRBfhjnw4/wMmA63ZGDJnWBmgY/lyQBpnDUkGmAhbSe39tx2d/iTOAfglwQ=="
@@ -9396,6 +9411,11 @@
   "version" "3.5.0"
   dependencies:
     "picomatch" "^2.2.1"
+
+"reason-future@^2.6.0":
+  "integrity" "sha512-wrXTAIGQed+Simhqc9X5PEjvBPhmPmxYImawNrDFGEt9woF/NY04Ny2BpiQk18e72QZMnOLdfPqCOdeT5egTAg=="
+  "resolved" "https://registry.npmjs.org/reason-future/-/reason-future-2.6.0.tgz"
+  "version" "2.6.0"
 
 "recursive-readdir@2.2.2":
   "integrity" "sha512-nRCcW9Sj7NuZwa2XvH9co8NPeXUBhZP7CRKJtU+cS6PW9FpCIFoI5ib0NT1ZrbNuPoRy0ylyCaUL8Gih4LSyFg=="
